@@ -7,6 +7,7 @@ import { AntiRagging } from './AntiRagging.component';
 import { CourseComponent } from './course/course.component';
 import { CourseService } from './course/course.service';
 import { DepermentsComponent } from './deperments/deperments.component';
+import { NameComponent } from './name/name.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { DepermentsComponent } from './deperments/deperments.component';
     AntiRagging,
     CourseComponent,
     DepermentsComponent,
+    NameComponent,
   ],
   imports: [
     BrowserModule,
