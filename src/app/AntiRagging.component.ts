@@ -1,9 +1,6 @@
-import {Component} from '@angular/core';
+import { Component } from "@angular/core";
 @Component({
-    selector:'antiragging',
-    template:'<h2>AntiRagging Application</h2>',
+  selector: "test",
+  template: "<h2>Test Component</h2>"
 })
-export class AntiRagging{
-    
-}
-
+export class AntiRagging {}
