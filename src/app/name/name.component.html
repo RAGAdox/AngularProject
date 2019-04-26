@@ -1,1 +1,21 @@
-<input type="text" [id]="myId" [disabled]="isDisabled" [value]="name" />
+<!--input type="text" [id]="myId" [disabled]="isDisabled" [value]="name" /-->
+
+<p [textContent]="name"></p>
+<form>
+  <div class="form-group">
+    <label for="name"></label>
+    <input
+      type="text"
+      class="form-control"
+      id="name"
+      (keyup)="onKey($event)"
+      (blur)="onKey($event)"
+      [value]="name"
+    />
+  </div>
+  <input #username type="text" (keyup)="onKeyOther(username.value)" />
+  <p [textContent]="username.value"></p>
+  <button class="btn btn-primary">SUBMIT</button>
+</form>
+<input type="text" class="form-control" id="name" required [(ngModel)]="data" />
+<p>{{ data }}</p>
